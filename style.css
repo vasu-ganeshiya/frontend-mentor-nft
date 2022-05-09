@@ -1,0 +1,158 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+
+
+}
+
+body {
+    background-color: var(--very-dark-blue-main);
+    /* width: 100vw; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    /* flex-wrap: wrap; */
+
+}
+
+.card {
+    transform: scale(0.5);
+    width: 500px;
+    height: 850px;
+    padding: 2rem;
+    background-color: var(--very-dark-blue-card);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 50px 20px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.card-body {
+    margin-top: 2rem;
+    border-bottom: 2px solid var(--very-dark-blue-line);
+    padding-bottom: 2rem;
+    object-fit: cover;
+    overflow: hidden;
+
+
+}
+
+.card-body p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: white;
+
+}
+
+.card-body-para {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-body h1 {
+    font-weight: 700;
+    width: fit-content;
+
+    color: white;
+}
+
+.card-body h1:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+.card-header {
+    background-color: cyan;
+    border-radius: 1rem;
+    background-image: url(eye.png);
+    background-position: center;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+
+
+}
+
+.card-header img:hover {
+    opacity: 0.5;
+    display: block;
+    cursor: pointer;
+
+}
+
+
+
+.card-body-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.ethvalue {
+    display: flex;
+    align-items: center;
+
+}
+
+.value {
+    margin-left: 0.5rem;
+    color: var(--cyan);
+    align-self: center;
+    font-weight: 400;
+}
+
+.timeleft {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    color: white;
+    font-weight: 400;
+    margin-left: 0.5rem;
+
+}
+
+.card-footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: white;
+
+}
+
+
+
+
+.card-footer img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+
+.card-footer .name:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+@media (min-width:600px) {
+    .card-body-para {
+        flex-wrap: nowrap;
+    }
+}
